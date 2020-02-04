@@ -1,0 +1,26 @@
+#list
+fruit = ["banana","orange", "mango", "lemon"]
+for fruit in reversed(fruit):
+    print(fruit)
+
+
+#country
+# file path = 'countries.py'
+fileHandler = open ("countries.py", "r")
+    
+    # Get list of all lines in file
+listOfLines = fileHandler.readlines()
+    
+    # Close file 
+fileHandler.close()           
+    
+    # Iterate over the lines
+for line in listOfLines:
+    check = line.find("land")
+    if check >=0:
+        print(line) 
+
+#MULTIPLICATION
+number = int(input("Enter the number: "))
+for numb in range(1,11):
+    print(number,"*",numb,"=",number*numb)
